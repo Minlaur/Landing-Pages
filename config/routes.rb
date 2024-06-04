@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
   root 'landing#index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get 'business', to: 'business#index', as: :business
 end

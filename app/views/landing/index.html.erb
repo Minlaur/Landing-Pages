@@ -1,2 +1,11 @@
-<h1>Landing#index</h1>
-<p>Find me in app/views/landing/index.html.erb</p>
+<div class="container align-center">
+  <h1>Plan your move to Japan with ease.</h1>
+  <p class="align-center"> Avoid the hassle and last-minute stress of migrating.</p>
+  <p class="align-center"> Receive recommended tasks and clear steps so you can control your onboarding better.</p>
+  <div>
+    <%= simple_form_for do |f| %>
+      <%= f.input :email, input_html: {class: "bg-white"}, label: false, placeholder: "Email address"%>
+      <%= f.button :submit, class: 'btn btn-primary', value: 'Free early access'%>
+    <% end %>
+  </div>
+</div>
