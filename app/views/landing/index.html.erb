@@ -1,11 +1,13 @@
-<div class="container align-center">
-  <h1>Plan your move to Japan with ease.</h1>
-  <p class="align-center"> Avoid the hassle and last-minute stress of migrating.</p>
-  <p class="align-center"> Receive recommended tasks and clear steps so you can control your onboarding better.</p>
-  <div>
-    <%= simple_form_for @user do |f| %>
-      <%= f.input :email, input_html: {class: "bg-white"}, label: false, placeholder: "Email address"%>
-      <%= f.button :submit, class: 'btn btn-primary', value: 'Free early access'%>
-    <% end %>
+<div class="container-lp">
+  <div class="container-fluid align-center ">
+    <h1>Plan your move to Japan with ease.</h1>
+    <p class="align-center"> Avoid the hassle and last-minute stress of migrating.</p>
+    <p class="align-center"> Receive recommended tasks and clear steps so you can control your onboarding better.</p>
+    <div class="mb-3">
+      <%= simple_form_for @user do |f| %>
+        <%= f.input :email, label: false, placeholder: "Email address"%>
+        <%= f.button :submit, class: 'btn btn-primary', value: 'Free early access'%>
+      <% end %>
+    </div>
   </div>
 </div>
