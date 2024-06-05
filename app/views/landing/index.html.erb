@@ -3,7 +3,7 @@
   <p class="align-center"> Avoid the hassle and last-minute stress of migrating.</p>
   <p class="align-center"> Receive recommended tasks and clear steps so you can control your onboarding better.</p>
   <div>
-    <%= simple_form_for do |f| %>
+    <%= simple_form_for @user do |f| %>
       <%= f.input :email, input_html: {class: "bg-white"}, label: false, placeholder: "Email address"%>
       <%= f.button :submit, class: 'btn btn-primary', value: 'Free early access'%>
     <% end %>
