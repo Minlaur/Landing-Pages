@@ -1,13 +1,23 @@
-<div class="container-lp">
-  <div class="container-fluid align-center ">
-    <h1>Plan your move to Japan with ease.</h1>
-    <p class="align-center"> Avoid the hassle and last-minute stress of migrating.</p>
-    <p class="align-center"> Receive recommended tasks and clear steps so you can control your onboarding better.</p>
-    <div class="mb-3">
-      <%= simple_form_for @user do |f| %>
-        <%= f.input :email, label: false, placeholder: "Email address"%>
-        <%= f.button :submit, class: 'btn btn-primary', value: 'Free early access'%>
-      <% end %>
+<div class="banner">
+  <div class="container">
+    <div class="container-lp">
+      <div class="container-fluid align-center ">
+        <h1 class="font-weight-semibold">Plan your move to Japan with ease.</h1>
+        <h6 class="font-weight-normal text-muted pb-3"> We are building an app that lets you manage your settling tasks so you can avoid the hassle and last-minute stress when migrating.</h6>
+        <div class="mb-3">
+          <%= simple_form_for @user do |f| %>
+            <%= f.input :email, label: false, placeholder: "Email address"%>
+            <%= f.button :submit, class: 'btn btn-primary', value: 'Free early access'%>
+            <%# <%= f.button :submit, class: 'btn-outline-secondary', value: 'Learn more'%>
+            <%= link_to 'Learn more', '#learn-more', class: 'btn btn-outline-secondary' %>
+          <% end %>
+        </div>
+        <%= image_tag "Onboardingbg.png", alt: "onboarding tasks", class: "img-fluid" %>
+        <div id="learn-more" class="container mt-5">
+          <h2>Learn More About Moving to Japan</h2>
+          <p>Here you can provide more detailed information about the services you offer, tips for moving to Japan, etc.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
