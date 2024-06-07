@@ -15,9 +15,50 @@
 
 body {
   font-family: Poppins, sans-serif;
-  color: #000;
+  color: #212529BF;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   background-color: #f7f8fa;
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+  background: #f7f8fa;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand {
+  color: #000000a6;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.footer {
+  height: 200px;
+  padding: 30px 50px;
+  color: rgba(0,0,0,0.3);
+  font-size: 15px;
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
 }

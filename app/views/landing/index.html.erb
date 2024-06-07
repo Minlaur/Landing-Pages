@@ -2,20 +2,34 @@
   <div class="container">
     <div class="container-lp">
       <div class="container-fluid align-center ">
+        <h6 class="font-weight-normal text-muted"> YOUR GO-TO MIGRANTS SUPPORT APP </h6>
         <h1 class="font-weight-semibold">Plan your move to Japan with ease.</h1>
-        <h6 class="font-weight-normal text-muted pb-3"> We are building an app that lets you manage your settling tasks so you can avoid the hassle and last-minute stress when migrating.</h6>
+        <p>We understand settling in Japan can be exciting but challenging. That's why we are building an app that will help you manage tasks and expectations so you can avoid the hassle and last-minute stress. </p>
         <div class="mb-3">
           <%= simple_form_for @user do |f| %>
-            <%= f.input :email, label: false, placeholder: "Email address"%>
-            <%= f.button :submit, class: 'btn btn-primary', value: 'Free early access'%>
-            <%# <%= f.button :submit, class: 'btn-outline-secondary', value: 'Learn more'%>
-            <%= link_to 'Learn more', '#learn-more', class: 'btn btn-outline-secondary' %>
+            <div class="form-group">
+              <%= f.input :email, input_html: { class: "bg-white custom-input-width" }, label: false, placeholder: "Email address"%>
+              <%= f.button :submit, class: 'btn btn-warning custom-button', value: 'Join the waitlist'%>
+            </div>
+            <%# <%= link_to 'Learn more', '#learn-more', class: 'btn btn-outline-secondary my-2' %>
           <% end %>
         </div>
         <%= image_tag "Onboardingbg.png", alt: "onboarding tasks", class: "img-fluid" %>
+      </div>
+      <div class="container">
         <div id="learn-more" class="container mt-5">
-          <h2>Learn More About Moving to Japan</h2>
-          <p>Here you can provide more detailed information about the services you offer, tips for moving to Japan, etc.</p>
+          <h2 class="mt-2">What you can expect</h2>
+          <ul class="no-bullets">
+            <li> <strong> Customized Onboarding Tasks </strong>
+              <p>Tailored to your specific needs based on your visa type, international experience, and existing social support in Japan. </p>
+            </li>
+            <li>  <strong> Clear Step-by-Step Processes </strong>
+              <p>Easy-to-follow instructions for each task, ensuring you complete everything correctly and efficiently.</p>
+            </li>
+            <li>  <strong> Japanese Culture Tips Included  </strong>
+              <p>Understand the unique aspects of Japanese procedures and customs to integrate smoothly and confidently.</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
