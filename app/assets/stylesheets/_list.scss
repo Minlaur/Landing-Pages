@@ -1,0 +1,20 @@
+.no-bullets {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.no-bullets li {
+  margin-bottom: 15px;
+}
+
+.no-bullets li strong {
+  font-weight: bold;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.no-bullets li p {
+  margin: 0;
+  padding: 1rem;
+}

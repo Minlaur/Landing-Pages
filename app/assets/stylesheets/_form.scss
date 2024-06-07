@@ -1,0 +1,16 @@
+.custom-input-width {
+  width: 15rem;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-button {
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+  height: calc(1.5em + 0.75rem + 2px);
+  margin-left: 1rem;
+}
