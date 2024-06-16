@@ -1,0 +1,58 @@
+.policy-container {
+  width: 1000px;
+  margin:50px auto;
+}
+
+.language {
+  text-align: end;
+  margin-bottom:50px;
+  display: flex;
+  justify-content: end;
+}
+
+.language p {
+  margin: 0 5px;
+  cursor : pointer;
+}
+
+.language p.selected {
+  text-decoration: underline;
+  color:red;
+}
+
+.title {
+  text-align: center;
+  font-size: 48px;
+}
+
+.intro {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.contents {
+  width: 90%;
+  margin: auto;
+}
+
+.contents ul {
+  width: 100%; /* Ensure the ul takes up the full width of its container */
+  margin: 20px 0; /* Reset default margin */
+  padding-left: 20px; /* Add padding if needed, adjust as necessary */
+  list-style-type: none;
+}
+
+.contents ul li {
+  margin-bottom: 10px; /* Add margin between list items, adjust as necessary */
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.topics {
+  text-align: center;
+  font-size: 36px;
+  margin-top:50px;
+  margin-bottom: 50px;
+}
+
+
