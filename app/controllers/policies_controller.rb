@@ -3,9 +3,9 @@ class PoliciesController < ApplicationController
     render partial: 'landing/policies_en'
   end
 
-  def policies_ph
-    render partial: 'landing/policies_ph'
-  end
+  # def policies_ph
+  #   render partial: 'landing/policies_ph'
+  # end
 
   def policies_jp
     render partial: 'landing/policies_jp'
