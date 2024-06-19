@@ -1,0 +1,11 @@
+<div class="policy-container" data-controller ="policy">
+  <div class="language">
+    <!-- 切り替え対象テキスト -->
+    <p data-action="click->policy#loadPolicies" data-language="en">🇺🇸EN</p>
+    <%# <p data-action="click->policy#loadPolicies" data-language="ph">🇵🇭PH</p> %>
+    <p data-action="click->policy#loadPolicies" data-language="jp">🇯🇵JP</p>
+  </div>
+  <div id="policy-content" data-policy-target="content">
+    <%= render partial: "policies_en" %>
+  </div>
+</div>
